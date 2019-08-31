@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Container from './components/Container.jsx';
+import ChatContainer from './components/ChatContainer.jsx';
+import {Provider} from 'unstated';
 
 ReactDOM.render(
-  <Container />,
+  <Provider>
+    <ChatContainer />
+  </Provider>,
   document.getElementById('app')
 );
