@@ -2,7 +2,7 @@ import { logger } from '../utils/logger'
 const io = require('socket.io-client');
 const socket = io('http://localhost:3000');
 
-let nickname = null;
+let nickname = '';
 
 logger.info('Connecting to the server...');
 
